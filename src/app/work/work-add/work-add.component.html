@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="{{imagePath}}" class="img-responsive">
+    </div>
+    <div class="col-md-6">
+      <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="workTitle">Title</label>
+          <input type="text"
+                 class="form-control"
+                 id="name"
+                 formControlName="name">
+        </div>
+        <div class="form-group">
+          <label for="workImage">Image</label>
+          <input type="text"
+                 class="form-control"
+                 id="imagePath"
+                 formControlName="imagePath">
+        </div>
+        <div class="form-group">
+          <label for="workDescription">Description</label>
+          <textarea
+            class="form-control"
+            id="description"
+            formControlName="description">
+          </textarea>
+        </div>
+        <div class="form-group">
+          <label for="workGitUrl">Git URL</label>
+          <input type="text"
+                 class="form-control"
+                 id="gitUrl"
+                 formControlName="gitUrl">
+        </div>
+        <div class="form-group">
+          <label for="activeUrl">Active Web Application</label>
+          <input type="text"
+                 class="form-control"
+                 id="activeUrl"
+                 formControlName="activeUrl">
+        </div>
+        <div formArrayName="skills">
+          <p><b>Skills</b></p>
+          <button class="btn btn-success add" type="button" (click)="onAddItem()">+</button>
+          <div class="form-group skills" *ngFor="let skill of myForm.controls['skills'].controls; let i = index">
+            <input type="text" class="form-control" [formControlName]="i">
+            <button class="btn btn-danger" type="button" (click)="onDeleteItem(i)">X</button>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit" [routerLink]="['']" (click)="onSaveWork()">Save</button>
+      </form>
+    </div>
+  </div>
+</div>

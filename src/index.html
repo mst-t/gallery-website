@@ -4,11 +4,24 @@
   <meta charset="utf-8">
   <title>GallerySite</title>
   <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
   <app-root>Loading...</app-root>
+  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCNgzJFyyeKrBT0AUJ9UkyHcK9Ci1u60FI",
+      authDomain: "gallery-website.firebaseapp.com",
+      databaseURL: "https://gallery-website.firebaseio.com",
+      projectId: "gallery-website",
+      storageBucket: "gallery-website.appspot.com",
+      messagingSenderId: "347614940147"
+    };
+    firebase.initializeApp(config);
+  </script>
 </body>
 </html>

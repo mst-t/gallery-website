@@ -1,0 +1,32 @@
+div {
+  background-color: white;
+  margin: 1.5em auto 4em auto;
+  padding: 1em;
+  width: 70%;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+h3 {
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+li {
+  background-color: #F0E68C;
+  margin: 0.5em;
+  padding: 0.5em;
+}

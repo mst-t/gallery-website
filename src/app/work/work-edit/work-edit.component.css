@@ -1,0 +1,19 @@
+.row {
+  margin-top: 2em;
+}
+
+#description {
+  height: 10em;
+}
+
+.add {
+  margin-bottom: 1em;
+}
+
+.skills {
+  display: flex;
+}
+
+.skills input {
+  width: 75%;
+}

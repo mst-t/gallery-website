@@ -1,0 +1,19 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" [routerLink]="['']">Gallery</a>
+    </div>
+
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active"><a [routerLink]="['/home']">Home</a></li>
+      <li routerLinkActive="active"><a [routerLink]="['/aboutme']">About Me</a></li>
+      <li routerLinkActive="active"><a [routerLink]="['/work-add']" *ngIf="onLoginStatus()">Add Work</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a [routerLink]="['']" (click)="onReset()">Reset</a></li>
+      <li routerLinkActive="active"><a [routerLink]="['/login']" *ngIf="!onLoginStatus()">Login/Sign up</a></li>
+      <li routerLinkActive="active"><a [routerLink]="['']" (click)="onLogout()" *ngIf="onLoginStatus()">Logout</a></li>
+    </ul>
+  </div><!-- /.container-fluid -->
+</nav>

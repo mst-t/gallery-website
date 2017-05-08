@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6" *ngFor="let work of works; let i = index">
+      <h3>{{work.name}}</h3>
+      <a [routerLink]="['/work-detail', i]" routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}">
+        <img src="{{work.imagePath}}" class="img-responsive">
+      </a>
+    </div>
+  </div>
+</div>

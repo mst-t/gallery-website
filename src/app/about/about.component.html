@@ -1,0 +1,51 @@
+<main class="container">
+  <div>
+    <h3>About Me</h3>
+    <p>
+      Welcome to my website. Currently I am working as an instructor to teach <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001">Front End Web Development</a> at <a href="https://www.udacity.com/">Udacity</a> which provides massive open online courses.
+      I like my current job, but now I am thinking of finding a more challenging job. I am looking for a job that I can use modern frameworks, especially in Angular. I hope that I can work with you!
+    </p>
+  </div>
+  <div>
+    <h3>My Skills and Knowledge</h3>
+    <section *ngFor="let items of skills">
+      <h4>{{items.title}}</h4>
+      <ul>
+        <li *ngFor="let item of items.items">{{item}}</li>
+      </ul>
+    </section>
+  </div>
+  <div>
+    <h3>My Career</h3>
+    <p>
+      It may sound strange, but I started my career as a translator for English and Japanese.
+      And for several reasons, I have become a front end developer. (If you are interested in my career, please press the button below.)
+    </p>
+    <button class="btn btn-success" (click)="onReadMore()">{{message}}</button>
+  </div>
+  <div *ngIf="isOpen">
+    <h3>Translator to Junior Android Developper</h3>
+    <p>
+      After joining <a href="http://nationalsoftware.co.jp/">the first company</a> in my career, I worked with the IT team.
+      After a while since starting the work, I became more familiar with Android documentation and our product specification than anyone in the company.
+      In retrospect, fortunately, my boss asked me if I wanted to code as well. (In fact, they were so busy that they needed a person who knows the specifications anyway). My programmer's career started at this time. I studied hard and made several Android applications to test our products. It was very interesting for me that the UI changed according to the code.
+    </p>
+  </div>
+  <div *ngIf="isOpen">
+    <h3>Udacity Student</h3>
+    <p>
+      I had to study programming more intensively. I looked for useful resources in both English and Japanese. Finally, I found something wonderful. That was Udacity.
+      What I really needed was basic knowledge of programming, so I began a basic Python course. At the same time, I learned basic HTML, CSS, and JavaScript. jQuery looked magical. After finishing those basic courses, I started another course. It was the "Web Development" course and it changed my life.
+      Through the course, I learned many new concepts. Advanced HTML and CSS, the template engine, basic SQL queries, routing, Ajax, and so on. At the end of the course, I submitted a simple blog-like website to Udacity. Thanks to my work experience, my code was well organized and modularized. Then, after an interview, I was invited to work with Udacity's coaches. I had no reason to refuse it.
+    </p>
+  </div>
+  <div *ngIf="isOpen">
+    <h3>Join Udacity Team</h3>
+    <p>
+      The team was new and interesting. Back then, I did not have much experience in front-end development, but since I was really interested in that field, I asked them if I could join the front-end team. They were tolerant! I learned in a hurry some Udacity courses related to the field. Through this process, my skills of front-end development had dramatically improved. In addition, by teaching students, my knowledge has been more organized.
+      <br>
+      <br>
+      This is my story from a translator to a front end developper. Thanks!
+    </p>
+  </div>
+</main>

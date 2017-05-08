@@ -1,0 +1,15 @@
+img {
+  width: 60%;
+  height: auto;
+  margin: 2em auto 5em auto;
+}
+
+img:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+h3 {
+  text-align: center;
+}
