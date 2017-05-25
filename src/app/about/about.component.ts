@@ -22,13 +22,13 @@ export class AboutComponent {
     {"title":'Language:',
      "items": ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'Python', 'Java']},
     {"title": 'Library and Framework:',
-     "items": ['jQuery', 'Bootstrap', 'Jasmine', 'AngularJs', 'Angular','KnockoutJs']},
+     "items": ['jQuery', 'Bootstrap', 'Jasmine', 'AngularJs', 'Angular','Knockout', 'Node', 'Express']},
     {"title":'Knowledge:',
      "items":[
       'MVVM Pattern', 'Object Oriented Programming', 'Test-driven Development',
-      'SPA Developement', 'Ajax', 'Promise', 'Google Map API', 'SQL']},
+      'SPA Developement', 'Ajax', 'Promise', 'Google Map API', 'SQL', 'MongoDB']},
     {"title": 'Tool:',
-     "items":['Git', 'Bower', 'Firebase']}
+     "items":['Git', 'Bower', 'Firebase', "mLab", "Heroku" ]}
   ];
 
   /**
