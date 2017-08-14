@@ -20,7 +20,7 @@ export class AboutComponent {
   public message: string = 'Read More';
   public skills: Array<Object> = [
     {"title":'Language:',
-     "items": ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'Python', 'Java']},
+     "items": ['HTML5', 'CSS3', 'JavaScript', 'ECMAScript 6', 'TypeScript', 'Python', 'Java']},
     {"title": 'Library and Framework:',
      "items": ['jQuery', 'Bootstrap', 'Jasmine', 'AngularJs', 'Angular','Knockout', 'Node', 'Express']},
     {"title":'Knowledge:',
